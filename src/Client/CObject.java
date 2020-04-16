@@ -26,4 +26,10 @@ public abstract class CObject {
     protected String executeMethod(String rankingByPrice, String []params){
         return CObjectManager.executeMethodByName(mHandle,rankingByPrice,params);
     }
+
+    @Override
+    public String toString() {
+        return "{Handle=" + mHandle +
+                '}';
+    }
 }

@@ -48,6 +48,7 @@ public class SDerived extends SObject {
     }
 
     private String rankingByPrice(String[] params) {
+//        System.out.println(mPrice);
         if(mPrice>=10) return "Expensive";
         else if (mPrice >=8 && mPrice <10) return "Normal";
         else return "Cheap";

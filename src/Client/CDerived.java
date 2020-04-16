@@ -9,11 +9,11 @@ public class CDerived extends CObject {
     private int Price;
 
     public String getProductID() {
-        return super.getAttributeByName("mID");
+        return super.getAttributeByName("ID");
     }
 
     public boolean setProductID(String productID) {
-        if(super.setAttributeByName("mID",productID)){
+        if(super.setAttributeByName("ID",productID)){
             ProductID=productID;
             return true;
         }
@@ -21,22 +21,22 @@ public class CDerived extends CObject {
     }
 
     public String getProductName() {
-        return  super.getAttributeByName("mDeriviedName");
+        return  super.getAttributeByName("DeriviedName");
     }
 
     public boolean setProductName(String productName) {
-        if(super.setAttributeByName("mDeriviedName",productName)){
+        if(super.setAttributeByName("DeriviedName",productName)){
             ProductName=productName;
             return true;
         }
         return false;    }
 
     public int getPrice() {
-        return Integer.parseInt(super.getAttributeByName("mPrice"));
+        return Integer.parseInt(super.getAttributeByName("Price"));
     }
 
     public boolean setPrice(int price) {
-        if(super.setAttributeByName("mID",Integer.toString(price))){
+        if(super.setAttributeByName("Price",Integer.toString(price))){
             Price=price;
             return true;
         }
@@ -48,7 +48,7 @@ public class CDerived extends CObject {
 
     @Override
     public String toString() {
-        return "CDerived{" +
+        return super.toString()+ "CDerived{" +
                 "ProductID='" + ProductID + '\'' +
                 ", ProductName='" + ProductName + '\'' +
                 ", Price=" + Price +

@@ -9,8 +9,8 @@ public class SObjectManager {
 
     // Step 1: Manage SObjects in a dictionary by handle number
     public static int Register(SObject sObject) {
-        int handle = mNextHandle++;
-        mDict.put(mNextHandle,sObject);
+        int handle = mNextHandle;
+        mDict.put(mNextHandle++,sObject);
         return handle;
     }
 
