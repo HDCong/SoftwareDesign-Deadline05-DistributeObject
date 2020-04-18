@@ -8,5 +8,5 @@
 
 3. Similar to the client side, create abstract CObject (define in CObject.java) is managed by CObjectManager. But in CObjectManager, just call methods defined in SObjectManager.
 
-4. Create object derived in client side, extend CObject. This object with attributes is mapped from SDerived
+4. Create object derived in client side, extend CObject. This object has attributes is mapped from SDerived
 
