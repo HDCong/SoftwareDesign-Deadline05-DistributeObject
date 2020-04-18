@@ -1,14 +1,12 @@
 package Server;
 
 public class SDerived extends SObject {
-    protected String mID;
     protected String mDeriviedName;
     protected int mPrice;
+
     @Override
     public String getAttributeByName(String attributeName) {
         switch (attributeName){
-            case "ID":
-                return mID;
             case "DeriviedName":
                 return mDeriviedName;
             case "Price":
@@ -20,9 +18,6 @@ public class SDerived extends SObject {
     @Override
     public boolean setAttributeByName(String attributeName,String value) {
         switch (attributeName){
-            case "ID":
-                mID = value;
-                return true;
             case "DeriviedName":
                 mDeriviedName= value;
                 return true;

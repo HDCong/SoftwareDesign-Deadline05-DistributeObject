@@ -4,21 +4,8 @@ public class CDerived extends CObject {
     public CDerived(){
         super.createDerivedObjectByName("SDerived");
     }
-    private String ProductID;
     private String ProductName;
     private int Price;
-
-    public String getProductID() {
-        return super.getAttributeByName("ID");
-    }
-
-    public boolean setProductID(String productID) {
-        if(super.setAttributeByName("ID",productID)){
-            ProductID=productID;
-            return true;
-        }
-        return false;
-    }
 
     public String getProductName() {
         return  super.getAttributeByName("DeriviedName");
@@ -49,7 +36,7 @@ public class CDerived extends CObject {
     @Override
     public String toString() {
         return super.toString()+ "CDerived{" +
-                "ProductID='" + ProductID + '\'' +
+                 + '\'' +
                 ", ProductName='" + ProductName + '\'' +
                 ", Price=" + Price +
                 '}';
